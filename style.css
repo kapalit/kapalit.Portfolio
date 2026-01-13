@@ -296,6 +296,7 @@ body {
     margin-bottom: 1.5rem;
     border-radius: 4px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -308,6 +309,26 @@ body {
     color: var(--primary);
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
+}
+
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.project-card.expanded .project-details {
+    max-height: 500px;
+    margin-top: 1rem;
+}
+
+.project-card.expanded h3::before {
+    content: "▼ ";
+}
+
+.project-card h3::before {
+    content: "► ";
+    transition: transform 0.3s;
 }
 
 .project-card p {
