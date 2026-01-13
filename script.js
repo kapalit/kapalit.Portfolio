@@ -172,11 +172,12 @@ function processCommand(input) {
     }
 }
 
-terminalInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        e.preventDefault();
+terminalInput.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter' || e.keyCode === 13) {
         const input = terminalInput.value;
-        processCommand(input);
+        if (input.trim()) {
+            processCommand(input);
+        }
         terminalInput.value = '';
     }
 });
