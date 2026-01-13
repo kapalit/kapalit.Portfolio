@@ -307,8 +307,21 @@ body {
 
 .project-card h3 {
     color: var(--primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     font-size: 1.3rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.project-card h3::before {
+    content: "►";
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s;
+}
+
+.project-card.expanded h3::before {
+    transform: rotate(90deg);
 }
 
 .project-details {
@@ -320,15 +333,6 @@ body {
 .project-card.expanded .project-details {
     max-height: 500px;
     margin-top: 1rem;
-}
-
-.project-card.expanded h3::before {
-    content: "▼ ";
-}
-
-.project-card h3::before {
-    content: "► ";
-    transition: transform 0.3s;
 }
 
 .project-card p {
