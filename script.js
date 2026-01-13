@@ -172,8 +172,9 @@ function processCommand(input) {
     }
 }
 
-terminalInput.addEventListener('keydown', (e) => {
+terminalInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
+        e.preventDefault();
         const input = terminalInput.value;
         processCommand(input);
         terminalInput.value = '';
