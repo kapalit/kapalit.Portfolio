@@ -37,7 +37,7 @@ window.addEventListener('resize', () => {
 
 // Terminal functionality
 const terminalInput = document.getElementById('terminal-input');
-const terminalOutput = document.getElementById('terminal-body');
+const terminalOutput = document.getElementById('terminal-output');
 const contentPanels = document.getElementById('content-panels');
 
 const commands = {
