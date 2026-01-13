@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapalit - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    
+    <div class="container">
+        <header class="header">
+            <div class="glitch" data-text="KAPALIT">KAPALIT</div>
+            <p class="subtitle">Cybersecurity Specialist | Ethical Hacker</p>
+        </header>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                <span class="terminal-title">root@kapalit:~$</span>
+                <div class="terminal-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+                <div class="output-line">Welcome to Kapalit's Cybersecurity Portfolio v1.0</div>
+                <div class="output-line">Type 'help' for available commands</div>
+                <div class="output-line">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">root@kapalit:~$</span>
+                <input type="text" id="terminal-input" class="terminal-input" autofocus autocomplete="off">
+            </div>
+        </div>
+
+        <div class="content-panels" id="content-panels">
+            <section id="about" class="panel hidden">
+                <h2 class="section-title">[ABOUT]</h2>
+                <div class="panel-content">
+                    <p>Cybersecurity professional specializing in penetration testing, vulnerability assessment, and secure system architecture.</p>
+                    <ul class="skills-list">
+                        <li><span class="skill-icon">▸</span> Penetration Testing & Red Teaming</li>
+                        <li><span class="skill-icon">▸</span> Network Security & Forensics</li>
+                        <li><span class="skill-icon">▸</span> Malware Analysis & Reverse Engineering</li>
+                        <li><span class="skill-icon">▸</span> Security Automation & Scripting</li>
+                        <li><span class="skill-icon">▸</span> Cloud Security (AWS, Azure)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skills" class="panel hidden">
+                <h2 class="section-title">[SKILLS]</h2>
+                <div class="panel-content">
+                    <div class="skill-category">
+                        <h3>Security Tools</h3>
+                        <div class="tags">
+                            <span class="tag">Metasploit</span>
+                            <span class="tag">Burp Suite</span>
+                            <span class="tag">Wireshark</span>
+                            <span class="tag">Nmap</span>
+                            <span class="tag">Ghidra</span>
+                            <span class="tag">IDA Pro</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Bash</span>
+                            <span class="tag">C/C++</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PowerShell</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Certifications</h3>
+                        <div class="tags">
+                            <span class="tag cert">OSCP</span>
+                            <span class="tag cert">CEH</span>
+                            <span class="tag cert">Security+</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="panel hidden">
+                <h2 class="section-title">[PROJECTS]</h2>
+                <div class="panel-content">
+                    <div class="project-card">
+                        <h3>Network Vulnerability Scanner</h3>
+                        <p>Automated tool for identifying security vulnerabilities in network infrastructure</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Nmap</span>
+                            <span class="tag">CVE Database</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Malware Analysis Framework</h3>
+                        <p>Sandbox environment for safe malware analysis and behavioral monitoring</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">YARA</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Security Automation Suite</h3>
+                        <p>Collection of scripts for automating security assessments and reporting</p>
+                        <div class="tags">
+                            <span class="tag">Bash</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="panel hidden">
+                <h2 class="section-title">[CONTACT]</h2>
+                <div class="panel-content">
+                    <div class="contact-info">
+                        <p><span class="contact-label">Email:</span> <a href="mailto:contact@kapalit.com">contact@kapalit.com</a></p>
+                        <p><span class="contact-label">GitHub:</span> <a href="https://github.com/kapalit" target="_blank">github.com/kapalit</a></p>
+                        <p><span class="contact-label">LinkedIn:</span> <a href="https://linkedin.com/in/kapalit" target="_blank">linkedin.com/in/kapalit</a></p>
+                        <p><span class="contact-label">PGP Key:</span> <span class="pgp-key">0x1234567890ABCDEF</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
