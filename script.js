@@ -36,20 +36,9 @@ window.addEventListener('resize', () => {
 });
 
 // Terminal functionality
-let terminalInput;
-let terminalOutput;
-let contentPanels;
-
-document.addEventListener('DOMContentLoaded', () => {
-    terminalInput = document.getElementById('terminal-input');
-    terminalOutput = document.getElementById('terminal-body');
-    contentPanels = document.getElementById('content-panels');
-    
-    // Setup terminal input listener
-    if (terminalInput) {
-        terminalInput.addEventListener('keydown', handleTerminalInput);
-    }
-});
+const terminalInput = document.getElementById('terminal-input');
+const terminalOutput = document.getElementById('terminal-body');
+const contentPanels = document.getElementById('content-panels');
 
 const commands = {
     help: {
