@@ -47,13 +47,14 @@ const commands = {
             return `
 Available commands:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  about      - Display information about me
-  skills     - Show my technical skills
-  projects   - View my projects
-  contact    - Get contact information
-  search     - Search through content (usage: search [term])
-  clear      - Clear terminal
-  help       - Show this help message
+  about          - Display information about me
+  skills         - Show my technical skills
+  certifications - View my certifications
+  projects       - View my projects
+  contact        - Get contact information
+  search         - Search through content (usage: search [term])
+  clear          - Clear terminal
+  help           - Show this help message
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
         }
     },
@@ -69,6 +70,13 @@ Available commands:
         execute: () => {
             showPanel('skills');
             return '[SUCCESS] Loaded skills section';
+        }
+    },
+    certifications: {
+        description: 'Display certifications section',
+        execute: () => {
+            showPanel('certifications');
+            return '[SUCCESS] Loaded certifications section';
         }
     },
     projects: {
@@ -111,7 +119,7 @@ Available commands:
 
 function searchContent(term) {
     const results = [];
-    const sections = ['about', 'skills', 'projects', 'contact'];
+    const sections = ['about', 'skills', 'certifications', 'projects', 'contact'];
     
     sections.forEach(section => {
         const panel = document.getElementById(section);
