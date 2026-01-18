@@ -363,6 +363,20 @@ body {
     border-bottom-color: var(--primary);
 }
 
+.cert-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: all 0.3s;
+}
+
+.cert-link:hover {
+    color: var(--secondary);
+    transform: translateX(5px);
+}
+
 .pgp-key {
     font-family: monospace;
     background: rgba(0, 255, 65, 0.1);
